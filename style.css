@@ -1,0 +1,25 @@
+:root { --bg: #fff; --fg: #0e1a33; --muted: #5c667a; --accent: #e8720c; --line: #e3e8f1; --soft: #f3f5f9; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1a33; --fg: #f2f4f8; --muted: #9fb0cc; --accent: #f08a2c; --line: #22304f; --soft: #16244a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+a { color: var(--accent); }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 22px; }
+.brand img { width: 48px; height: 48px; }
+.motto { font-weight: 400; font-size: 15px; color: var(--muted); font-style: italic; }
+h1 { font-size: clamp(28px, 6vw, 42px); line-height: 1.1; margin: 36px 0 12px; }
+.lead { font-size: 18px; color: var(--muted); margin: 0 0 32px; }
+.products { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.products li { display: flex; gap: 16px; align-items: flex-start; background: var(--soft); border-radius: 14px; padding: 16px; }
+.products img { width: 56px; height: 56px; border-radius: 14px; flex: none; }
+.products h2 { font-size: 18px; margin: 0 0 4px; }
+.products h2 a { color: inherit; text-decoration: none; }
+.products p { margin: 0 0 6px; color: var(--muted); font-size: 15px; }
+.products .links { font-size: 14px; margin: 0; }
+.soon { font-style: italic; }
+.tag { font-size: 12px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 99px; padding: 1px 8px; vertical-align: 2px; margin-left: 4px; }
+footer { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+footer p { margin: 0 0 6px; }
+.muted { color: var(--muted); font-size: 14px; }
